@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    text-align: center;
+    background-color: aquamarine;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Weeks */
+
+/* Week 1 */
+.icons {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.iconbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Popups */
+.popup,
+.popup2,
+.popup3,
+.mainpopup,
+.mainpopup2,
+.brand,
+.shirts {
+    background-color: white;
+    position: absolute;
+    top: 160px;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    padding: 10px;
+    z-index: 2;
+}
+
+.overlay {
+    background-color: gray;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 80%;
+    z-index: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Instagram Popups */
+.format {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    height: 30px;
+
+}
+
+.pop {
+    width: 60px;
+    height: 60px;
+}
+
+/* Instagram main popup */
+.top {
+    display: flex;
+    gap: 60px;
+}
+
+.bottom {
+    display: flex;
+    padding-left: 85px;
+}
+
+/* Fashon items */
+.items:hover {
+    width: 400px;
+    height: 400px;
+}
