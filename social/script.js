@@ -5,6 +5,7 @@ const fashion = document.querySelector('.fashion');
 const overlay = document.querySelector('.overlay');
 const main = document.querySelector('.mainpopup');
 const main2 = document.querySelector('.mainpopup2');
+const main3 = document.querySelector('.mainpopup3');
 const popup = document.querySelector('.popup');
 const popup2 = document.querySelector('.popup2');
 const popup3 = document.querySelector('.popup3');
@@ -15,6 +16,7 @@ const shirt = document.querySelector('.shirt');
 const brand = document.querySelector('.brand');
 const versace = document.querySelector('.ver');
 const shirts = document.querySelector('.shirts');
+const gym = document.querySelector('.gym');
 
 
 // Opens Instagram popup
@@ -98,5 +100,17 @@ versace.addEventListener('click', function () {
 // Closes up versace shirts popup
 overlay.addEventListener('click', function () {
     shirts.classList.add('hidden');
+    overlay.classList.add('hidden');
+});
+
+// Opens Gym main page
+gym.addEventListener('click', function () {
+    main3.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+});
+
+// Closes up gym main page
+overlay.addEventListener('click', function () {
+    main3.classList.add('hidden');
     overlay.classList.add('hidden');
 });

@@ -45,6 +45,7 @@ a {
 .popup3,
 .mainpopup,
 .mainpopup2,
+.mainpopup3,
 .brand,
 .shirts {
     background-color: white;
@@ -75,9 +76,9 @@ a {
 .format {
     display: flex;
     flex-direction: column;
-    width: 30px;
-    height: 30px;
-
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .pop {
@@ -88,10 +89,15 @@ a {
 /* Instagram main popup */
 .top {
     display: flex;
-    gap: 60px;
+    justify-content: space-around;
 }
 
 .bottom {
     display: flex;
-    padding-left: 85px;
+}
+
+/* Fashion popups */
+.fash {
+    display: flex;
+    flex-direction: column;
 }
