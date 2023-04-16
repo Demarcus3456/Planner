@@ -95,9 +95,3 @@ a {
     display: flex;
     padding-left: 85px;
 }
-
-/* Fashon items */
-.items:hover {
-    width: 400px;
-    height: 400px;
-}
