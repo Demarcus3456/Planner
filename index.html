@@ -12,26 +12,118 @@
 <body>
     <div class="showcase">
         <div class="container">
-            <nav id="list" class="hidden">
-                <ul class="menu">
-                    <li><a href='#'><button class="back">x</button></a></li>
-                    <li><a href='Enjoyment list/index.html'><button>Entertament List</button></a></li>
-                    <li><a href='#'><button>Career</button></a></li>
-                    <li><a href='#'><button>Finanical</button></a></li>
-                    <li><a href='social/index.html'><button>Relationships</button></a></li>
-                    <li><a href='#'><button>Presonal Development</button></a></li>
-                </ul>
-            </nav>
 
-            <div>
-                <a href="#"><button class="menuv2">Menu</button></a>
+            <!-- Habits -->
+
+
+            <!-- Goals -->
+            <div class="to-do">
+                <h1>Goals Tracker</h1>
+                <div class="tasks">
+                    <div class="task">
+                        <h2>Career</h2>
+                        <a href='#' class="career"><img src="images/th.jfif"></a>
+                        <div class="progress  completion-bar"><span>0</span>%</div>
+                    </div>
+                    <div class="task">
+                        <h2>Career</h2>
+                        <img src="images/th.jfif">
+                        <div class="progress"><span>0</span>%</div>
+                    </div>
+                    <div class="task">
+                        <h2>Career</h2>
+                        <img src="images/th.jfif">
+                        <div class="progress"><span>0</span>%</div>
+                    </div>
+                    <div class="task">
+                        <h2>Career</h2>
+                        <img src="images/th.jfif">
+                        <div class="progress"><span>0</span>%</div>
+                    </div>
+                    <div class="task">
+                        <h2>Career</h2>
+                        <img src="images/th.jfif">
+                        <div class="progress"><span>0</span>%</div>
+                    </div>
+                    <div class="task">
+                        <h2>Career</h2>
+                        <img src="images/th.jfif">
+                        <div class="progress"><span>0</span>%</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="overlay hidden"></div>
+
+        <!-- Goals Popup -->
+        <div class="main hidden">
+            <div class="habit-tracker">
+                <div class=" habit-popup">
+                    <div class="popup-content">
+                        <div class="habit-task-list">
+                            <!-- Habit elements will be added here -->
+                        </div>
+                        <button onclick="openSettingsPopup()">Add Habit</button>
+                    </div>
+
+                    <div class="popup-overlay settings-popup">
+                        <div class="popup-content">
+                            <span class="popup-close" onclick="closeSettingsPopup()">x</span>
+                            <label>
+                                Type:
+                                <select id="type-select">
+                                    <option value="habit">Habit</option>
+                                    <option value="task">Task</option>
+                                </select>
+                            </label>
+                            <label>
+                                Name:
+                                <input type="text" id="name-input">
+                            </label>
+                            <label>
+                                Sub-tasks:
+                                <input type="checkbox" id="subtasks-checkbox" onchange="toggleSubtasks(this)">
+                            </label>
+                            <div id="subtask-inputs" style="display: none;">
+                                <button onclick="addSubtaskInput()">Add Sub-task</button>
+                            </div>
+                            <label>
+                                Completion Bar:
+                                <input type="checkbox" id="completion-checkbox">
+                            </label>
+                            <label>
+                                Link:
+                                <input type="text" id="link-input">
+                            </label>
+                            <button onclick="saveSettings()">Save</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <video src="videos/motivation.mp4" muted loop autoplay></video>
-        <div class="overlay"></div>
-    </div>
 
-    <script src="script.js"></script>
+
+
+
+        <!-- Menu -->
+
+        <nav id="list" class="hidden">
+            <ul class="menu">
+                <li><a href='#'><button class="back">x</button></a></li>
+                <li><a href='Enjoyment list/index.html'><button>Entertament List</button></a></li>
+                <li><a href='Career/index.html'><button>Career</button></a></li>
+                <li><a href='finanical/index.html'><button>Finanical</button></a></li>
+                <li><a href='social/index.html'><button>Relationships</button></a></li>
+                <li><a href='Personal Development/index.html'><button>Personal Development</button></a></li>
+            </ul>
+        </nav>
+        <div>
+            <a href="#"><button class="menuv2">Menu</button></a>
+        </div>
+
+        <script src="script.js"></script>
 </body>
 
 </html>

@@ -5,45 +5,150 @@
     font-family: sans-serif;
 }
 
-/* MENU */
-.container {
-    display: flex;
-    justify-content: center;
-    padding-right: 500px;
+body {
+    background-color: beige;
+    text-align: center;
 }
 
-nav ul li {
-    list-style: none;
+h1 {
+    text-decoration: underline;
 }
 
-.menuv2 {
-    position: absolute;
-    top: 96%;
-    left: 50%;
-    z-index: 1;
+img {
+    width: 200px;
+    height: 100px;
 }
 
 .hidden {
     display: none;
 }
 
-.menu {
-    border: 2px solid red;
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    z-index: 2;
+/* Task Tracker */
+.to-do {
+    border: 4px solid black;
+    width: 350px;
+    Height: 500px;
+    overflow: hidden;
 }
 
-/* Video Background */
-.showcase video {
+.task {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.due-today {
+    border: 4px solid black;
+    width: 300px;
+}
+
+.main {
+    border: 2px solid black;
+    width: 450px;
+    height: 400px;
+    background-color: azure;
+    position: absolute;
+    top: 130px;
+    left: 370px;
+}
+
+.overlay {
+    background-color: lightgrey;
     position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    opacity: 0.8;
+    opacity: 90%;
+}
+
+.progress {
+    border: 2px solid red;
+    width: 200px;
+    height: 20px;
+}
+
+/* Habits */
+
+/* MENU */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: lightgray;
+    margin-top: 10px;
+}
+
+.progress2 {
+    height: 100%;
+    background-color: lightblue;
+    width: 0%;
+}
+
+/* Main Goals */
+
+.completion-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    margin-bottom: 10px;
+}
+
+.habit-task-list {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.habit,
+.task {
+    display: flex;
+    align-items: center;
+}
+
+.habit .habit-name,
+.task .task-name {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.habit .habit-delete,
+.task .task-delete {
+    cursor: pointer;
+    color: red;
+}
+
+.habit .habit-delete:hover,
+.task .task-delete:hover {
+    text-decoration: underline;
+}
+
+
+/* Styling for the settings popup */
+.settings-popup {
+    display: none;
+}
+
+.settings-popup label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.settings-popup input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.settings-popup input[type="checkbox"] {
+    margin-right: 5px;
 }

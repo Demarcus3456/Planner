@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: beige;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Wim Hof Man */
+.medtaion {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.wim-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+/* Circle Animation */
+.circle-outline {
+    border: 5px solid black;
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    border-radius: 100%;
+}
+
+.circle-progress-1 {
+    border-radius: 100%;
+    position: absolute;
+    top: 299px;
+    z-index: 3;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(63, 255, 60);
+}
+
+.circle-progress-2 {
+    border-radius: 100%;
+    position: absolute;
+    top: 269px;
+    z-index: 2;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(115, 0, 255, 0.998);
+}
+
+.circle-progress-3 {
+    border-radius: 100%;
+    position: absolute;
+    top: 239px;
+    z-index: 1;
+    width: 180px;
+    height: 180px;
+    background-color: rgb(255, 234, 0);
+}
+
+.circle-progress-5 {
+    border-radius: 100%;
+    position: absolute;
+    top: 210px;
+    width: 240px;
+    height: 240px;
+    background-color: blue;
+}
+
+/* Table */
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+/* NoFap Timer */
+#days {
+    font-size: 30px;
+}
+
+#hours {
+    font-size: 30px;
+}
+
+#minutes {
+    font-size: 30px;
+}
+
+#seconds {
+    font-size: 30px;
+}
+
+#colon {
+    font-size: 30px;
+}
